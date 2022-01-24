@@ -1,0 +1,50 @@
+<html>
+<head><title>Motivation Video</title></head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="video.css">
+<body>
+    <div class="title"> 
+        <h1>LIPVIU TEAM</h1> 
+    </div>
+    <br></br>
+    <div style="text-align:center"> 
+        <p>Tap to adjust the screen size :<p>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video id="video1" width="420" controls>
+          <source src="VidLIPVIU.mp4" type="video/mp4">
+          <source src="VidLIPVIU.mp4" type="video/ogg">
+          Your browser does not support HTML video.
+        </video>
+        <br><br>
+        <button onclick="playPause()">Play/Pause</button> 
+    </div> 
+      
+    <script> 
+      var myVideo = document.getElementById("video1"); 
+      
+      function playPause() { 
+        if (myVideo.paused) 
+          myVideo.play(); 
+        else 
+          myVideo.pause(); 
+      } 
+      
+      function makeBig() { 
+          myVideo.width = 560; 
+      } 
+      
+      function makeSmall() { 
+          myVideo.width = 320; 
+      } 
+      
+      function makeNormal() { 
+          myVideo.width = 420; 
+      } 
+    </script> 
+      
+</body>
+</html>
